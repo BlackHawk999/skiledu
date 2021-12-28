@@ -292,6 +292,7 @@ export default {};
     width: 50%;
 
     .photo-wrapper {
+      display: flex;
       position: relative;
       width: 80%;
       max-width: 600px;
@@ -316,7 +317,7 @@ export default {};
       background: #ffffff;
       border-radius: 50%;
       box-shadow: 0px 4px 60px rgba(41, 44, 124, 0.15);
-      transform: translate(50%);
+      transform: translate(50%, -50%);
     }
   }
 
@@ -459,6 +460,10 @@ export default {};
         font-size: 15px;
         padding: 13px 30px;
       }
+    }
+
+    .testimonials-items {
+      padding: 25px;
     }
 
     .testimonial-btn {
@@ -687,13 +692,18 @@ export default {};
     }
 
     .testimonials-photo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       width: 100%;
+
       .photo-wrapper {
-        width: 100%;
+        width: 90%;
       }
     }
 
     .review {
+      position: static;
       padding: 10px 10px 10px 10px;
       transform: translate(0%, 0%);
 

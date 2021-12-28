@@ -437,6 +437,7 @@ export default {};
 
     .category-photo {
       width: 100%;
+      margin-bottom: 15px;
     }
 
     .about-category {
