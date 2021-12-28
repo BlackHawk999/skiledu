@@ -235,6 +235,7 @@ export default {};
     &-infos-wrapper {
       display: flex;
       flex-direction: column;
+      align-items: center;
     }
 
     &-block {
