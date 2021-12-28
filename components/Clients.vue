@@ -129,6 +129,7 @@ export default {
     .icons-main-wrapper {
       gap: 10px;
       flex-wrap: wrap;
+      justify-content: flex-start;
     }
 
     .icon-wrapper {

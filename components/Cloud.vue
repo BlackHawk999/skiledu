@@ -100,6 +100,7 @@ export default {};
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 50px 40px;
     margin-top: 100px;
     background: #ffffff;
@@ -107,10 +108,7 @@ export default {};
     border-radius: 20px;
 
     .block-img {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translateY(-100%);
       width: 48px;
       height: 48px;
       padding: 10px;
@@ -240,7 +238,8 @@ export default {};
     }
 
     &-block {
-      padding: 20px 5px;
+      max-width: 350px;
+      padding: 20px 12px;
       margin-top: 30px;
 
       .block-img {

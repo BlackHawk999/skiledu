@@ -694,7 +694,7 @@ export default {};
     .testimonials-photo {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      align-items: center;
       width: 100%;
 
       .photo-wrapper {
