@@ -18,7 +18,7 @@
               <button class="play">
                 <img src="@/assets/images/play.svg" alt="" />
               </button>
-              <p>Watch how it works</p>
+              <span>Watch how it works</span>
             </div>
           </div>
 
@@ -145,7 +145,7 @@ export default {
         }
       }
 
-      p {
+      span {
         font-weight: normal;
         font-size: 24px;
         line-height: 36px;
@@ -224,17 +224,22 @@ export default {
       }
 
       &-btns {
+        display: flex;
+        flex-direction: column;
+
         .join {
           font-size: 15px;
           padding: 15px 35px;
+          margin-bottom: 15px;
         }
 
         .play {
+          display: flex;
+          align-items: center;
           width: 70px;
           height: 70px;
         }
-
-        p {
+        span {
           font-size: 15px;
         }
       }

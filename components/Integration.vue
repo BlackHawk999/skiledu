@@ -609,6 +609,7 @@ export default {};
     .pre-title {
       font-size: 12px;
       transform: translateX(0%);
+      text-align: center;
       &::before {
         display: none;
       }
@@ -635,10 +636,12 @@ export default {};
       h3 {
         font-size: 22px;
         margin-bottom: 15px;
+        text-align: center;
       }
 
       p {
         font-size: 15px;
+        text-align: center;
 
         &:nth-child(3) {
           margin: 15px 0 15px 0;
@@ -647,6 +650,8 @@ export default {};
     }
 
     &-btn {
+      display: flex;
+      justify-content: center;
       margin-top: 20px;
 
       button {
@@ -667,6 +672,9 @@ export default {};
     }
 
     .testimonial-btn {
+      display: flex;
+      justify-content: center;
+
       button {
         font-size: 15px;
         white-space: nowrap;
@@ -679,7 +687,7 @@ export default {};
     }
 
     .testimonials-photo {
-      width: 70%;
+      width: 100%;
       .photo-wrapper {
         width: 100%;
       }

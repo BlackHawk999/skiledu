@@ -118,4 +118,23 @@ export default {
     }
   }
 }
+
+@media screen and (max-width: 575.98px) {
+  .clients {
+    &-title {
+      font-size: 17px;
+      margin-bottom: 25px;
+    }
+
+    .icons-main-wrapper {
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .icon-wrapper {
+      width: auto;
+      height: 25px;
+    }
+  }
+}
 </style>

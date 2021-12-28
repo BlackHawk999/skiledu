@@ -234,6 +234,11 @@ export default {};
       }
     }
 
+    &-infos-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
     &-block {
       padding: 20px 5px;
       margin-top: 30px;

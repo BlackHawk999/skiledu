@@ -4,13 +4,19 @@
       <div class="close-icon" @click="active = !active">
         <img src="@/assets/images/close.svg" alt="" />
       </div>
+
+      <div class="sidebar-logo">
+        <div class="logo-wrapper">
+          <img src="@/assets/images/logo.png" alt="" />
+        </div>
+        <h4 class="logo-text">Skilline</h4>
+      </div>
+      <div class="titles">
+        <h5 v-for="(item, idx) in items" :key="idx">{{ item.title }}</h5>
+      </div>
       <div class="sidebar-reg">
         <a class="log right" href="">Log in</a>
         <a class="log" href="">Sign Up</a>
-      </div>
-
-      <div class="titles">
-        <h5 v-for="(item, idx) in items" :key="idx">{{ item.title }}</h5>
       </div>
     </div>
   </div>
@@ -48,6 +54,7 @@ export default {
   transform: translateX(100%);
   transition: all 0.4s;
   z-index: 100;
+  padding: 10px;
 
   &.open {
     transform: translateX(0);
@@ -56,7 +63,39 @@ export default {
   .wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
     position: relative;
+  }
+
+  .sidebar-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transform: translateX(-10px);
+    padding-bottom: 10px;
+
+    width: 100%;
+  }
+  .logo-wrapper {
+    width: 50px;
+    height: 50px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .logo-text {
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    color: #113c49;
   }
 
   .sidebar-reg {
@@ -65,7 +104,6 @@ export default {
     justify-content: center;
     padding-bottom: 10px;
     margin: 20px 0 20px 0;
-    border-bottom: 1px solid #2f327d;
 
     .log {
       border: 1px solid #ffffff;
@@ -89,15 +127,15 @@ export default {
 
   .close-icon {
     position: absolute;
-    left: 15px;
+    right: 15px;
     top: 10px;
+    z-index: 2;
   }
 
   .titles {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    padding-right: 90px;
+    align-items: center;
 
     h5 {
       font-weight: 500;

@@ -258,11 +258,17 @@ export default {};
     }
 
     &-subscribe {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
       p {
         font-size: 15px;
       }
 
       input {
+        margin-right: 0;
+        margin-bottom: 15px;
         padding: 5px 30px 5px 20px;
         font-size: 15px;
       }
@@ -276,6 +282,10 @@ export default {};
     &-links {
       a {
         font-size: 15px;
+        &:nth-child(2) {
+          padding: 0px 10px 0 10px;
+          margin: 0 10px 0 10px;
+        }
       }
     }
 

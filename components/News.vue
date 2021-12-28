@@ -372,10 +372,12 @@ export default {};
 
     &-title {
       h3 {
-        font-size: 25px;
+        text-align: center;
+        font-size: 20px;
       }
 
       p {
+        text-align: center;
         font-size: 15px;
       }
     }
@@ -418,7 +420,14 @@ export default {};
       width: 100%;
     }
 
+    &-category.full {
+      width: 100%;
+    }
+
     .category-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       margin-bottom: 25px;
 
       &:not(:last-child) {
@@ -426,8 +435,12 @@ export default {};
       }
     }
 
+    .category-photo {
+      width: 100%;
+    }
+
     .about-category {
-      margin-left: 30px;
+      margin-left: 0;
 
       h6 {
         font-size: 15px;

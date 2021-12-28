@@ -188,9 +188,11 @@ export default {};
 
       h3 {
         font-size: 25px;
+        text-align: center;
       }
 
       p {
+        text-align: center;
         font-size: 15px;
         margin: 15px 0 15px 0;
       }

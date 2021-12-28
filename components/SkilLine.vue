@@ -209,4 +209,42 @@ export default {};
     }
   }
 }
+
+@media screen and (max-width: 575.98px) {
+  .skil-line {
+    padding: 20px 0;
+
+    .skil-title {
+      margin-bottom: 30px;
+
+      h3 {
+        font-size: 25px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+
+    .skill-photos {
+      display: flex;
+      flex-direction: column;
+      .skill-img-title {
+        position: absolute;
+        top: 25%;
+        left: 8%;
+
+        h5 {
+          font-size: 20px;
+          margin-bottom: 0;
+        }
+
+        button {
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+}
 </style>

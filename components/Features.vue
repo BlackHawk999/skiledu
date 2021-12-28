@@ -473,6 +473,7 @@ export default {};
     .interface-title {
       font-size: 20px;
       margin-bottom: 15px;
+      text-align: center;
     }
 
     .interface-curve {
@@ -488,6 +489,7 @@ export default {};
     }
 
     .interface-icon-text {
+      line-height: 1;
       font-size: 15px;
     }
 
@@ -515,10 +517,12 @@ export default {};
         h5 {
           font-size: 25px;
           margin-bottom: 15px;
+          text-align: center;
         }
 
         p {
           font-size: 15px;
+          text-align: center;
         }
       }
 
